@@ -16,7 +16,8 @@ Please customize the contents of the playbook as you wish.
 ansible-playbook playbook.yml -i inventory --ask-become-pass
 ``` 
 
-## Additional installation of packages not compatible with Homebrew
+## Additional installations
+Please install the packages that are not available in ubuntu package manager.
 - [Zoom](https://zoom.us/)
 - [GVM](https://github.com/moovweb/gvm), or goenv
 - [NVM](https://github.com/nvm-sh/nvm), or nodenv

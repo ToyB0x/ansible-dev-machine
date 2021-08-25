@@ -1,4 +1,4 @@
-<h1 align="center">Mac Setup</h1>
+<h1 align="center">Ubuntu Setup</h1>
 <p align="center"><img src="../docs/ubuntu.png" alt="Systems"></p>
 
 # Overview

@@ -10,7 +10,7 @@ A playbook for Mac dev machine.
 Please update Mac OS itself.
 
 ## Homebrew / Ansible installation
-```.shell script
+```shell
 # Install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
@@ -18,9 +18,9 @@ Please update Mac OS itself.
 brew install ansible
 ``` 
 
-## Ansibleの実行
+## Run ansible
 Please customize the contents of the playbook as you wish.
-```.shell script
+```shell
 ansible-playbook playbook.yml -i inventory
 ``` 
 

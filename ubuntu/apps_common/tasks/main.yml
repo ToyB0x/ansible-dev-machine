@@ -1,0 +1,12 @@
+---
+  - block:
+    - name: Install apps
+      apt:
+        name: '{{ item.name }}'
+        state: present
+      with_items:
+      - name: keepassxc
+      - name: gimp
+      - name: inkscape
+    become: yes
+

@@ -1,0 +1,29 @@
+---
+  - block:
+    - name: Install ufw
+      apt:
+        name: ufw
+        state: present
+
+    - name: reset ufw setting
+      ufw:
+        state: reset # 過去の設定を初期化
+
+    - name: ufw default deny
+      ufw:
+        direction: incoming # 外からの接続を拒否
+        policy: deny
+        state: enabled
+
+    - name: ufw default allow outgoing
+      ufw:
+        direction: outgoing
+        policy: allow
+        state: enabled
+
+    - name: Install gufw
+      apt:
+        name: gufw
+        state: present
+
+    become: yes

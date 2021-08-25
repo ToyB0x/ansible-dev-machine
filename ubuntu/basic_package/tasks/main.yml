@@ -1,0 +1,20 @@
+---
+  - block:
+    - name: apt update & apt upgrade
+      apt:
+        update_cache: true
+        cache_valid_time: 3600
+        upgrade: yes
+
+    - name: Install basic-package
+      apt:
+        name: '{{ item.name }}'
+        state: present
+      with_items:
+      - name: build-essential
+      - name: git
+      - name: sshpass # ansibleのssh接続で利用
+      - name: curl
+      - name: default-jdk
+    become: yes
+

@@ -1,0 +1,22 @@
+---
+- hosts: localhost
+  become: no
+  vars:
+    ubuntu_name: focal
+
+  roles:
+    - basic_package
+    - ufw_gufw
+    - apps_work
+    - apps_common
+    - clean_up
+
+  pre_tasks:
+    - name: Confirmation before execution
+      pause:
+        prompt: Make sure you are not running it with sudo.(Use --ask-become-pass)
+
+  post_tasks:
+    - name: Confirmation of port closure status
+      pause:
+        prompt: Check the port closure status with sudo ufw status verbose.

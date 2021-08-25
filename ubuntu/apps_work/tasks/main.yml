@@ -1,0 +1,14 @@
+---
+  - block:
+    - name: Install apps
+      apt:
+        name: '{{ item.name }}'
+        state: present
+      with_items:
+      - name: byobu
+      - name: chromium-browser
+      - name: protobuf-compiler # enable protoc command
+      - name: meld
+      - name: jq
+    become: yes
+

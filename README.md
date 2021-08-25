@@ -3,4 +3,4 @@
 
 # 概要
 This is a playbook for development machines.  
-See `READEME.md` in the `./mac` and `./ubuntu` dirs for how to use it.
+See `README.md` in the `./mac` and `./ubuntu` dirs for how to use it.

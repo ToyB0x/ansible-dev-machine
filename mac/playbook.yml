@@ -7,50 +7,27 @@
     brew_packages:
       # git系
       - git
-      - git-lfs
-      - git-secrets
-      - tig
-      - gh
-      # infra系
-      - ansible
-      - awscli
-      - packer
-      # lang management系
-      - pyenv
-      - tfenv
-      # others
       - direnv
       - docker-compose
-      - fzf
-      - golang-migrate
       - jq
       - openssl
-      - peco
       - tree
-      - vim
       - wget
-      - yarn
 
     brew_cask_apps:
       # browser系
       - firefox
       - chromium
-      - google-chrome
       # JetBrains系
       - goland
-      - pycharm
       - webstorm
-      - android-studio
       # work系
       - slack
       # others
       - docker
       - dropbox
-      - iTerm2
-      - karabiner-elements
       - meld
       - skitch
-      - 1Password
       - keepassxc
 
   tasks:

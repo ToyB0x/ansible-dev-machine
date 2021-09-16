@@ -5,7 +5,6 @@
   become: no
   vars:
     brew_packages:
-      # git系
       - git
       - direnv
       - docker-compose
@@ -13,6 +12,7 @@
       - openssl
       - tree
       - wget
+      - java
 
     brew_cask_apps:
       # browser系

@@ -13,6 +13,7 @@
       - tree
       - wget
       - java
+      - tfenv
 
     brew_cask_apps:
       # browser系
